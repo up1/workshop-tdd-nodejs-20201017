@@ -3,5 +3,5 @@ test("Hello test with jest", () => {
 });
 
 it("Hello test with jest 2", () => {
-  expect(false).toBeTruthy();
+  expect(true).toBeTruthy();
 });

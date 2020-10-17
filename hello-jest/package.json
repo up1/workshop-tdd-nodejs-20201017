@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --coverage --watchAll"
   },
   "author": "up1",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "jest": "^26.5.3"
+  },
+  "jest": {
+      "collectCoverage": true,
+      "coverageReporters": ["json", "html"]
   }
 }
