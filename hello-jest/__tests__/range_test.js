@@ -29,3 +29,8 @@ test("case [1,5] should return 1,2,3,4,5", () => {
   const result = range.format(input);
   expect(result).toBe("1,2,3,4,5");
 });
+
+test("Invalid input ...", () => {
+  const invalidInput = "|1,5]";
+  expect(() => range.validate(invalidInput)).toThrowError("Invalid input");
+});

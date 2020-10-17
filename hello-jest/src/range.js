@@ -29,8 +29,13 @@ function* xx(start, end) {
   }
 }
 
+const validate = (input) => {
+  throw new Error("Invalid input");
+};
+
 module.exports = {
   isStartWithInclude,
   getStart,
   format,
+  validate,
 };
